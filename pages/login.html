@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&splay=swap"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilosLogin.css">
+
+    <title>Rolling Plus | Login</title>
+</head>
+<body>
+    <header>
+        <nav>    
+            <h2 class="logotipo ms-3 mt-3"> <a href="../index.html">Rolling plus</a></h2>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 col-md-4 offset-md-4">
+                <h2 id="titIniciar" class="text-white text-center">Iniciar sesión</h2>
+                <form id="formulario" class="d-grid gap-2 text-white">
+
+                    <label class="fw-bold">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" maxlength="30" required/>
+
+                    <label class="fw-bold mt-4">Contraseña</label>
+                    <input type="password" class="form-control" id="password" maxlength="8" required/>
+                    <p>
+                        Olvidaste tu contraseña? Haz click 
+                        <b>
+                            <a href="/pages/registrarse.html" class=" text-white nuevaPassword">AQUI.</a>
+                        </b>
+                    </p>
+
+                    <button class="btn btn-success mt-2">Ingresar</button>
+                </form>
+                <p class="mt-5 text-white">Aun no sos parte de nuestra familia?
+                    <b>
+                        <a href="/pages/registrarse.html" class="ms-2 text-white">Registrate</a>
+                    </b>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&splay=swap"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilosLogin.css">
+
+    <title>Rolling Plus | Registrarse</title>
+</head>
+<body>
+    <header>
+        <nav>    
+            <h2 class="logotipo ms-3 mt-3"> <a href="../index.html">Rolling plus</a></h2>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 col-md-4 offset-md-4">
+
+                <form id="formulario" class="d-grid gap-2 text-white">
+                    <label class="fw-bold">Nombre</label>
+                    <input type="text" class="form-control mb-3" id="nombre" maxlength="30" required/>
+
+                    <label class="fw-bold">Correo electrónico</label>
+                    <input type="email" class="form-control mb-3" id="email" maxlength="30" required/>
+
+                    <label class="fw-bold">Contraseña</label>
+                    <input type="password" class="form-control mb-3" id="password" maxlength="8" required/>
+
+                    <label class="fw-bold">Repetir contraseña</label>
+                    <input type="password" class="form-control mb-4" id="password2" maxlength="8" required/>
+                    
+                    <button class="btn btn-success">
+                        Registrarme
+                    </button>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/registrarse.js"></script>
+</body>
+</html>

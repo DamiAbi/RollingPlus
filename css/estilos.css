@@ -91,6 +91,7 @@ header nav a.activo {
   padding: 0.93em 1.87em;
   color: #fff;
   margin-right: 1.25em;
+  margin-top: 0.5em;
   cursor: pointer;
   transition: 0.3s ease all;
   font-size: 1.12em;
