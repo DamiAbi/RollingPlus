@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&splay=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Rolling Plus | Contacto</title>
+</head>
+<body id="contacto">
+    <header>
+        <div class="contenedor">
+            <h2 class="logotipo">Rolling plus</h2>
+            <nav>
+                <a href="../index.html" class="activo">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="./pages/contacto.html">Contacto</a>
+                <a href="./pages/login.html">Login</a>
+                <a href="./pages/registrarse.html">Registro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id = "contactoMain" class="container">
+            <div class="row d-flex justify-content-between">
+
+                <div id="msjContacto" class="col-sm-12 col-md-5 text-white text-center">
+                    <h3>¡Trabajemos juntos!</h3>
+                    <hr>
+                    <h4>
+                        Si deseas consultar mayor informacion sobre nuestros servicios o tienes algunda duda al respecto, no dudes en comunicarte con nosotros y te contactaremos a la brevedad
+                    </h4>
+                    <br><br><br><!-- whatsapp  -->
+                </div>
+                
+                <div id="formContacto" class="col-sm-12 col-md-5 text-white">
+                    <h3 class="text-center">Comunicate con nosotros!</h3>
+                    <hr>
+                    <div class="card">
+                        <div class="card-body">
+                            <form id="formulario" class="d-grid gap-2">
+                                
+                                <label class="fw-bold text-black">Nombre</label>
+                                <input type="text" class="form-control mb-3" id="nombre" maxlength="30" required/>
+                                
+                                <label class="fw-bold text-black">Correo electrónico</label>
+                                <input type="email" class="form-control mb-3" id="email" maxlength="30" required/>
+                                
+                                <textarea name="msj" id="msjForm" placeholder="Escriba su msj aqui..." cols="15" rows="3"></textarea>
+                                
+                                <button class="btn btn-success">Enviar</button>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="whatsapp">
+            <a href="https://wa.me/5493815095541" target="_blank">
+                <img src="../img/whatsapp_logo.png" alt="whatsapp" />
+            </a>
+        </div>
+    </main>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/contacto.js"></script>
+</body>
+</html>

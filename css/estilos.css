@@ -108,6 +108,7 @@ header nav a.activo {
 
 /* ---- ----- ----- Media Queries ----- ----- ----- */
 @media screen and (max-width: 800px) {
+
   header .logotipo {
     margin-bottom: 10px;
     font-size: 30px;
@@ -125,4 +126,41 @@ header nav a.activo {
   .pelicula-principal .descripcion {
     max-width: 100%;
   }
+
+  .whatsapp{
+    display: none;
+  }
+
+}
+
+
+/* ---- ----- ----- Pagina de CONTACTO ----- ----- ----- */
+
+#contactoMain{
+  
+  margin-top: 18rem;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 10px;
+  left: 5px;
+  width: 80px;
+  z-index: 2;
+}
+
+.whatsapp img {
+  width: 80%;
+}
+
+#msjContacto{
+  background-color: rgba(14, 13, 13, 0.2);
+}
+#formContacto{
+  background-color: rgba(14, 13, 13, 0.2);
+}
+
+#contacto{
+  background-image: url(../img/pagcontacto.png);
+  background-size: cover;
 }
