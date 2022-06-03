@@ -7,6 +7,7 @@ function handleSubmit(e) {
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
 
+    let login = document.getElementById("linkLogin")
 
     let validar = usuarios.find((user) => {
         return user.email === email;
