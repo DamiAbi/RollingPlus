@@ -39,20 +39,17 @@ const registroUsuario = function (e) {
         
         usuarios.push(new Usuario(nombre, correo, password));
         localStorage.setItem("usuarios", JSON.stringify(usuarios));
-        document.getElementById("formulario").reset();
+        document.getElementById("formularioRegistro").reset();
     
-        alert("Usuario registrado correctamente");
+        alert("Usuario registrado con exito");
 
-        // document.getElementById("text_nombre").focus();
         location.replace("../pages/login.html");
         
     }
     else
     {
-        return alert("El nombre DEBE ser un texto valido")
+        return alert("Ingrese datos validos")
     }
-
-
 };
 
-document.getElementById("formulario").addEventListener("submit", registroUsuario);
+document.getElementById("formularioRegistro").addEventListener("submit", registroUsuario);
