@@ -1,14 +1,20 @@
 body{
     /* background: linear-gradient(to right, #000814 0%, #001d3d 50%, #003566 100%); */
-    background: linear-gradient(to right, #212529 0%, #343a40 50%, #495057 100%);
+    /* background: linear-gradient(to right, #212529 0%, #343a40 50%, #495057 100%); */
+    background-image: url(../img/pagcontacto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 a{
     text-decoration: none;
+    color: purple;
+
 }
 
 .nuevaPassword{
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .container{
@@ -22,23 +28,39 @@ a{
     z-index: 2;
 } */
 
-.logotipo {
-    margin-bottom: 5rem;
-    font-family: "Bebas Neue", cursive;
-    font-weight: normal;
-    color: #e50914;
-    font-size: 50px;
+header {
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
 }
 
-.logotipo a{
-    margin-bottom: 5rem;
+header .logotipo {
     font-family: "Bebas Neue", cursive;
     font-weight: normal;
-    color: #e50914;
-    font-size: 50px;
+    color: purple;
+    font-size: 40px;
+    margin-left: 20px;
 }
+
+
 
 #titIniciar{
     font-size: 50px;
     margin-bottom: 6rem;
 }
+
+#formulario{
+    margin-top: 10rem;
+    border-radius: 5%;
+    padding: 10px;
+    background-color: rgba(7, 7, 7, 0.5);
+}
+#formularioRegistro{
+    margin-top: 4rem;
+    border-radius: 5%;
+    padding: 10px;
+    background-color: rgba(7, 7, 7, 0.5);
+}
+
+
+

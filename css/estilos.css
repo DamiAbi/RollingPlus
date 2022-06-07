@@ -3,7 +3,7 @@
   --fondo: #141414;
 }
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -106,45 +106,6 @@ header nav a.activo {
   margin-right: 1.25em;
 }
 
-/* ---- ----- ----- Media Queries ----- ----- ----- */
-@media screen and (max-width: 800px) {
-  header .logotipo {
-    margin-bottom: 10px;
-    font-size: 30px;
-  }
-
-  header .contenedor {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .pelicula-principal {
-    font-size: 14px;
-  }
-
-  .pelicula-principal .descripcion {
-    max-width: 100%;
-  }
-
-  .peliculas-recomendadas.contenedor-carousel {
-    overflow: visible;
-  }
-  .peliculas-recomendadas.contenedor-carousel.carousel {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  .peliculas-recomendadas.indicadores,
-  .peliculas-recomendadas.peliculas-recomendadas.flecha-izquierda
-    .peliculas-recomendadas.flecha-derecha {
-    display: none;
-  }
-
-  .whatsapp {
-    display: none;
-  }
-}
-
 .contenedor-titulo-controles {
   display: flex;
   justify-content: space-between;
@@ -191,6 +152,13 @@ header nav a.activo {
   transition: 0.2s ease all;
 }
 
+.peliculas-recomendadas.contenedorprincipal.flecha-izquierda {
+  left: 0;
+}
+.peliculas-recomendadas.contenedorprincipal.flecha-derecha {
+  right: 0;
+}
+
 .peliculas-recomendadas.contenedor-carousel {
   width: 100%;
   padding: 20px 0;
@@ -220,11 +188,46 @@ header nav a.activo {
 .peliculas-recomendadas.contenedorprincipal.flecha-derecha:hover {
   background: rgba(0, 0, 0, 0.9);
 }
-.peliculas-recomendadas.contenedorprincipal.flecha-izquierda {
-  left: 0;
-}
-.peliculas-recomendadas.contenedorprincipal.flecha-derecha {
-  right: 0;
+
+
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+  header .logotipo {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pelicula-principal {
+    font-size: 14px;
+  }
+
+  .pelicula-principal .descripcion {
+    max-width: 100%;
+  }
+
+  .peliculas-recomendadas.contenedor-carousel {
+    overflow: visible;
+  }
+  .peliculas-recomendadas.contenedor-carousel.carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .peliculas-recomendadas.indicadores,
+  .peliculas-recomendadas.peliculas-recomendadas.flecha-izquierda
+    .peliculas-recomendadas.flecha-derecha {
+    display: none;
+  }
+
+  .whatsapp {
+    display: none;
+  }
 }
 
 /* ---- ----- ----- Pagina de CONTACTO ----- ----- ----- */
@@ -246,13 +249,39 @@ header nav a.activo {
 }
 
 #msjContacto {
-  background-color: rgba(14, 13, 13, 0.2);
-}
-#formContacto {
-  background-color: rgba(14, 13, 13, 0.2);
+  background-color: rgba(184, 181, 181, 0.2);
+  border-radius: 5%;
 }
 
-#contacto {
-  background-image: url(../img/pagcontacto.png);
-  background-size: cover;
+#formContacto {
+  background-color: rgba(184, 181, 181, 0.2);
+  border-radius: 5%;
+}
+
+
+
+
+/* ---- ----- ----- Pagina de ERROR 404 ----- ----- ----- */
+
+.bg-image{
+  background-image: url(../img/error2.gif) ;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.logoError {
+  margin-bottom: 5rem;
+  font-family: "Bebas Neue";
+  font-weight: normal;
+  color: #DB202C;
+  font-size: 60px;
+}
+
+.logoError a{
+  margin-bottom: 5rem;
+  font-family: "Bebas Neue";
+  font-weight: normal;
+  color: #DB202C;
+  font-size: 60px;
 }
