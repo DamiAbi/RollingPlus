@@ -35,7 +35,7 @@ header .contenedor {
 header .logotipo {
   font-family: "Bebas Neue", cursive;
   font-weight: normal;
-  color: purple;
+  color: #e50914;
   font-size: 40px;
   margin-left: 20px;
 }
@@ -57,7 +57,7 @@ header nav a.activo {
   min-height: 40.62em;
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
-    url(../img/backdrop.jpg);
+    url(../img/poster1.jpg);
   background-position: center center;
   background-size: cover;
   margin-bottom: 3.12em;
@@ -125,134 +125,94 @@ header nav a.activo {
   .pelicula-principal .descripcion {
     max-width: 100%;
   }
+  .carrusel {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
 
-  .peliculas-recomendadas.contenedor-carousel {
-    overflow: visible;
+  .carrusel-items {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 30px 0px;
   }
-  .peliculas-recomendadas.contenedor-carousel.carousel {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+
+  .carrusel-item {
+    min-width: 300px;
+    max-width: 300px;
+    height: 200px;
+    outline: 2px solid black;
+    cursor: pointer;
   }
-  .peliculas-recomendadas.indicadores,
-  .peliculas-recomendadas.peliculas-recomendadas.flecha-izquierda
-    .peliculas-recomendadas.flecha-derecha {
-    display: none;
+
+  .carrusel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carrusel-item:hover {
+    transform: scale(1.2);
+  }
+  .carrusel {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .carrusel-items {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 30px 0px;
+  }
+
+  .carrusel-item {
+    min-width: 300px;
+    max-width: 300px;
+    height: 200px;
+    outline: 2px solid black;
+    cursor: pointer;
+  }
+
+  .carrusel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carrusel-item:hover {
+    transform: scale(1.2);
+  }
+
+  /* ---- ----- ----- Pagina de CONTACTO ----- ----- ----- */
+
+  #contactoMain {
+    margin-top: 18rem;
   }
 
   .whatsapp {
-    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+    width: 80px;
+    z-index: 2;
   }
-}
 
-.contenedor-titulo-controles {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
-.contenedor-titulo-controles h3 {
-  background: #fff;
-  font-size: 30px;
-}
-.contenedor-titulo-controles.indicadores button {
-  background: #fff;
-  height: 3px;
-  width: 10px;
-  cursor: pointer;
-  border: none;
-  margin-right: 2px;
-}
-.contenedor-titulo-controles.indicadores button:hover,
-.contenedor-titulo-controles.indicadores button.activo {
-  background: red;
-}
-.peliculas-recomendadas {
-  margin-bottom: 70px;
-}
-.peliculas-recomendadas.contenedorprincipal {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
+  .whatsapp img {
+    width: 80%;
+  }
 
-.peliculas-recomendadas.contenedorprincipal.flecha-izquierda,
-.peliculas-recomendadas.contenedorprincipal.flecha-derecha {
-  position: absolute;
-  border: none;
-  background: rgba(0, 0, 0, 0.3);
-  font-size: 40px;
-  height: 50%;
-  top: calc(50% - 25%);
-  line-height: 40px;
-  width: 50px;
-  color: #fff;
-  cursor: pointer;
-  z-index: 500;
-  transition: 0.2s ease all;
-}
+  #msjContacto {
+    background-color: rgba(14, 13, 13, 0.2);
+  }
+  #formContacto {
+    background-color: rgba(14, 13, 13, 0.2);
+  }
 
-.peliculas-recomendadas.contenedor-carousel {
-  width: 100%;
-  padding: 20px 0;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
-.peliculas-recomendadas.contenedor-carousel.carousel {
-  display: flex;
-  flex-wrap: nowrap;
-}
-.peliculas-recomendadas.contenedor-carousel.carousel.pelicula {
-  width: 20%;
-  transition: 0.3s ease all;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-.peliculas-recomendadas.contenedor-carousel.pelicula {
-  transform: scale(1.2);
-  transform-origin: center;
-}
-
-.peliculas-recomendadas.contenedor-carousel.carousel.pelicula img {
-  width: 100%;
-  vertical-align: top;
-}
-
-.peliculas-recomendadas.contenedorprincipal.flecha-izquierda:hover,
-.peliculas-recomendadas.contenedorprincipal.flecha-derecha:hover {
-  background: rgba(0, 0, 0, 0.9);
-}
-.peliculas-recomendadas.contenedorprincipal.flecha-izquierda {
-  left: 0;
-}
-.peliculas-recomendadas.contenedorprincipal.flecha-derecha {
-  right: 0;
-}
-
-/* ---- ----- ----- Pagina de CONTACTO ----- ----- ----- */
-
-#contactoMain {
-  margin-top: 18rem;
-}
-
-.whatsapp {
-  position: fixed;
-  bottom: 10px;
-  left: 5px;
-  width: 80px;
-  z-index: 2;
-}
-
-.whatsapp img {
-  width: 80%;
-}
-
-#msjContacto {
-  background-color: rgba(14, 13, 13, 0.2);
-}
-#formContacto {
-  background-color: rgba(14, 13, 13, 0.2);
-}
-
-#contacto {
-  background-image: url(../img/pagcontacto.png);
-  background-size: cover;
+  #contacto {
+    background-image: url(../img/pagcontacto.png);
+    background-size: cover;
+  }
 }

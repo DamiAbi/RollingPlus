@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Source+Serif+4:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap");
+
+:root {
+  --rojo: #e50914;
+  --fondo: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  padding: 30px 0;
+  position: fixed;
+  top: 0;
+}
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+header .logotipo {
+  font-family: "Bebas Neue", cursive;
+  font-weight: normal;
+  color: #e50914;
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+header nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+  color: #fff;
+}
+
+.cursiva {
+  font-size: 40px;
+  font-family: "Amatic SC", cursive;
+  color: brown;
+  margin-top: 16px;
+}
+
+.container h1 {
+  margin-top: 80px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  font-family: "Gideon Roman", cursive;
+  font-weight: bold;
+}
+
+.container p {
+  font-family: "Gideon Roman", cursive;
+  font-weight: bold;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+  margin-top: 32px;
+  background-color: rgb(48, 11, 11);
+}
+
+.card img {
+  height: 150px;
+  width: 150px;
+  filter: grayscale(0);
+  object-fit: cover;
+  margin-top: 16px;
+}
+
+footer {
+  font-family: "Gideon Roman", cursive;
+}
+
+* footer */ footer {
+  margin-top: 20px;
+  height: 150px;
+}
+footer span {
+  font-size: 14px;
+}
