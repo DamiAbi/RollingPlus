@@ -106,7 +106,6 @@ header nav a.activo {
   margin-right: 1.25em;
 }
 
-/* ---- ----- ----- Media Queries ----- ----- ----- */
 @media screen and (max-width: 800px) {
   header .logotipo {
     margin-bottom: 10px;
@@ -215,4 +214,183 @@ header nav a.activo {
     background-image: url(../img/pagcontacto.png);
     background-size: cover;
   }
+}
+.pelicula-principal .boton a {
+  text-decoration: none;
+  color: black;
+}
+
+.contenedor-titulo-controles {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.contenedor-titulo-controles h3 {
+  background: #fff;
+  font-size: 30px;
+}
+.contenedor-titulo-controles.indicadores button {
+  background: #fff;
+  height: 3px;
+  width: 10px;
+  cursor: pointer;
+  border: none;
+  margin-right: 2px;
+}
+.contenedor-titulo-controles.indicadores button:hover,
+.contenedor-titulo-controles.indicadores button.activo {
+  background: red;
+}
+.peliculas-recomendadas {
+  margin-bottom: 70px;
+}
+.peliculas-recomendadas.contenedorprincipal {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.peliculas-recomendadas.contenedorprincipal.flecha-izquierda,
+.peliculas-recomendadas.contenedorprincipal.flecha-derecha {
+  position: absolute;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  height: 50%;
+  top: calc(50% - 25%);
+  line-height: 40px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 500;
+  transition: 0.2s ease all;
+}
+
+.peliculas-recomendadas.contenedorprincipal.flecha-izquierda {
+  left: 0;
+}
+.peliculas-recomendadas.contenedorprincipal.flecha-derecha {
+  right: 0;
+}
+
+.peliculas-recomendadas.contenedor-carousel {
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.peliculas-recomendadas.contenedor-carousel.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.peliculas-recomendadas.contenedor-carousel.carousel.pelicula {
+  width: 20%;
+  transition: 0.3s ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.peliculas-recomendadas.contenedor-carousel.pelicula {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+
+.peliculas-recomendadas.contenedor-carousel.carousel.pelicula img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.peliculas-recomendadas.contenedorprincipal.flecha-izquierda:hover,
+.peliculas-recomendadas.contenedorprincipal.flecha-derecha:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+  header .logotipo {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pelicula-principal {
+    font-size: 14px;
+  }
+
+  .pelicula-principal .descripcion {
+    max-width: 100%;
+  }
+
+  .peliculas-recomendadas.contenedor-carousel {
+    overflow: visible;
+  }
+  .peliculas-recomendadas.contenedor-carousel.carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .peliculas-recomendadas.indicadores,
+  .peliculas-recomendadas.peliculas-recomendadas.flecha-izquierda
+    .peliculas-recomendadas.flecha-derecha {
+    display: none;
+  }
+
+  .whatsapp {
+    display: none;
+  }
+}
+
+/* ---- ----- ----- Pagina de CONTACTO ----- ----- ----- */
+
+#contactoMain {
+  margin-top: 18rem;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 10px;
+  left: 5px;
+  width: 80px;
+  z-index: 2;
+}
+
+.whatsapp img {
+  width: 80%;
+}
+
+#msjContacto {
+  background-color: rgba(184, 181, 181, 0.2);
+  border-radius: 5%;
+}
+
+#formContacto {
+  background-color: rgba(184, 181, 181, 0.2);
+  border-radius: 5%;
+}
+
+/* ---- ----- ----- Pagina de ERROR 404 ----- ----- ----- */
+
+.bg-image {
+  background-image: url(../img/error2.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.logoError {
+  margin-bottom: 5rem;
+  font-family: "Bebas Neue";
+  font-weight: normal;
+  color: #db202c;
+  font-size: 60px;
+}
+
+.logoError a {
+  margin-bottom: 5rem;
+  font-family: "Bebas Neue";
+  font-weight: normal;
+  color: #db202c;
+  font-size: 60px;
 }
