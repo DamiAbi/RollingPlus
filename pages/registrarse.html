@@ -20,30 +20,34 @@
         </nav>
     </header>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-4 ">
-
-                <form id="formularioRegistro" class="d-grid gap-2 text-white">
-                    <label class="fw-bold">Nombre</label>
-                    <input type="text" class="form-control mb-3 bg-dark text-white" id="nombre" maxlength="30" required/>
-
-                    <label class="fw-bold">Correo electrónico</label>
-                    <input type="email" class="form-control mb-3 bg-dark text-white" id="email" maxlength="30" required/>
-
-                    <label class="fw-bold">Contraseña</label>
-                    <input type="password" class="form-control mb-3 bg-dark text-white" id="password" maxlength="8" required/>
-
-                    <label class="fw-bold">Repetir contraseña</label>
-                    <input type="password" class="form-control mb-4 bg-dark text-white" id="password2" maxlength="8" required/>
+    <main>
+        <div class="container">
+            
+            <div class="row">
+                <div  id ="registro" class="col-12 col-md-4 ">
                     
-                    <button class="btn btn-success rounded-pill">
-                        Registrarme
-                    </button>             
-                </form>
+                    <form id="formularioRegistro" class="d-grid gap-2 text-white">
+                        <label class="fw-bold">Nombre</label>
+                        <input type="text" class="form-control mb-3 bg-dark text-white" id="nombre" maxlength="30" required/>
+                        
+                        <label class="fw-bold">Correo electrónico</label>
+                        <input type="email" class="form-control mb-3 bg-dark text-white" id="email" maxlength="30" required/>
+                        
+                        <label class="fw-bold">Contraseña</label>
+                        <input type="password" class="form-control mb-3 bg-dark text-white" id="password" maxlength="8" required/>
+                        
+                        <label class="fw-bold">Repetir contraseña</label>
+                        <input type="password" class="form-control mb-4 bg-dark text-white" id="password2" maxlength="8" required/>
+                        
+                        <button class="btn btn-success rounded-pill" onclick="enviarMail()">
+                            Registrarme
+                        </button>             
+                    </form>
+
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
 
     <script src="../js/bootstrap.bundle.min.js"></script>

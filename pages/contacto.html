@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../img/loguito.png" type="image/x-icon">
     
+    <script src="../js/smtp.js"></script>
     <title>Rolling Plus | Contacto</title>
 </head>
 <body id="contacto">
@@ -20,7 +21,7 @@
             <h2 class="logotipo">Rolling plus</h2>
             <nav>
                 <a href="../index.html" class="activo">Inicio</a>
-                <a href="#">Nosotros</a>
+                <a href="/pages/nosotros.html">Nosotros</a>
                 <a href="/pages/contacto.html">Contacto</a>
 
                 <a href="/pages/login.html">Login</a>
@@ -31,18 +32,17 @@
 
     <main>
         <div id = "contactoMain" class="container">
-            <div class="row d-flex justify-content-between">
+            <div id="cosas" class="row d-flex justify-content-between">
 
-                <div id="msjContacto" class="col-sm-12 col-md-5 text-white text-center">
+                <div id="msjContacto" class="col-sm-12 col-md-5 text-white text-center mb-4">
                     <h3>¡Trabajemos juntos!</h3>
                     <hr>
                     <h4>
                         Si deseas consultar mayor informacion sobre nuestros servicios o tienes algunda duda al respecto, no dudes en comunicarte con nosotros y te contactaremos a la brevedad
                     </h4>
-                    <br><br><br>
                 </div>
                 
-                <div id="formContacto" class="col-sm-12 col-md-5 text-white">
+                <div id="formContacto" class="col-sm-12 col-md-5 text-white mb-3">
                     <h3 class="text-center">Comunicate con nosotros</h3>
                     <hr>
                     <form id="formulario" class="d-grid gap-2 mb-3 text-white">
@@ -55,13 +55,13 @@
                         
                         <textarea name="msj" id="msjForm" placeholder="Escriba su msj aqui..." cols="15" rows="3" name="mensaje" class=" bg-dark text-white"></textarea>
                         
-                        <button id="btnContacto" class="btn btn-success rounded-pill">Enviar</button>
-                        
+                        <button id="btnContacto" class="btn btn-success rounded-pill">Enviar</button>                       
                     </form>
-                </div>
-                
+
+                </div>                
             </div>
         </div>
+
         
         <div class="whatsapp">
             <a href="https://wa.me/5493815095541" target="_blank">

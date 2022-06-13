@@ -1,6 +1,7 @@
 //localstorage debe tener una clave llamada usuarios -> array de objetos con los datos de cada usuario registrado
 
 let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+let exitoRegistro = document.getElementById("registro") 
 
 class Usuario {
     constructor(nombre, email, password, rol = "usuario") {
@@ -33,17 +34,30 @@ const registroUsuario = function (e) {
             return user.email === correo;
         });
     
-        if (validar) {
+        if (validar) 
+        {
             return alert("El correo ya está registrado.");
         }
         
         usuarios.push(new Usuario(nombre, correo, password));
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
-        document.getElementById("formularioRegistro").reset();
-    
-        alert("Usuario registrado con exito");
 
-        location.replace("../pages/login.html");
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+        document.getElementById("formularioRegistro").reset();
+
+        let msj = document.createElement("div")
+        // msj.classList= "col-12 col-md-12 col-lg-12"
+        
+        let cuerpo = `  <div class="alert alert-success mt-5" role="alert">
+                            El usuario ${correo} se ha registrado correctamente!
+                        </div>`
+        
+        msj.innerHTML = cuerpo
+        document.getElementById("registro").appendChild(msj)
+
+        setTimeout(function(){
+            location.replace("../pages/login.html");
+        }, 3000)
         
     }
     else
