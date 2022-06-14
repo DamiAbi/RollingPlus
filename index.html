@@ -1,59 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&splay=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&splay=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/estilos.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/inicio.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="shortcut icon" href="./img/loguito.png" type="image/x-icon" />
     <title>Rolling plus | Home</title>
-</head>
-<body>
-  <header>
-    <div class="contenedor">
-      <h2 class="logotipo">Rolling plus</h2>
-      <nav>
-        <a href="#" class="activo">Inicio</a>
-        <a href="#">Nosotros</a>
-        <a href="./pages/contacto.html">Contacto</a>
-        <a href="./pages/login.html">Login</a>
-        <a href="./pages/registrarse.html">Registrarse</a>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          
+          <h2 class="logotipo">Rolling plus</h2>
+           <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse fix" id="navbarNavDropdown">
+            <ul class="navbar-nav w-100 d-flex justify-content-around" >
+              <li class="nav-item ">
+                <a class="nav-link text-white text-md-end" aria-current="page" href="#"> <i class=></i>Inicio</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-white text-md-end" aria-current="page" href="./nosotros.html"><i ></i>Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white text-md-end" href="./pages/contacto.html"><i ></i> Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white text-md-end" href="./pages/login.html"><i ></i>Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white text-md-end" href="./pages/registrarse.html"><i ></i>Registrarse</a>
+              </li>
 
-        <!-- <button class="btn btn-success btn-md">
-          <a href="./pages/login.html">Cerrar Sesion</a>
-        </button> -->
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    
-    <div class="pelicula-principal">
-      <div class="contenedor">
-        <h2 class="logotipo">Rolling plus</h2>
-        <nav>
-          <a href="#" class="activo">Inicio</a>
-          <a href="./pages/nosotros.html">Nosotros</a>
-          <a href="./pages/contacto.html">Contacto</a>
-          <a href="./pages/login.html">Login</a>
-          <a href="./pages/registrarse.html">Registro</a>
-
-          <!-- <button class="btn btn-success btn-md">
-            <a href="./pages/login.html">Cerrar Sesion</a>
-          </button> -->
+              
+            </ul>
+          </div>                         
         </nav>
-      </div>
-    </header>
+      </header>
 
     <main>
       <div class="pelicula-principal">
         <div class="contenedor">
-          <h3 class="titulo">Jurassic World Dominion </h3>
+          <h3 class="titulo">Jurassic World Dominion</h3>
           <p class="descripcion">
-            La isla Nublar y su parque han sido destruidos, pero el problema no se terminó. Con los dinosaurios dispersos por todo el mundo, la convivencia entre el presente y el pasado alcanza un nuevo nivel de tensión.
+            La isla Nublar y su parque han sido destruidos, pero el problema no
+            se terminó. Con los dinosaurios dispersos por todo el mundo, la
+            convivencia entre el presente y el pasado alcanza un nuevo nivel de
+            tensión.
           </p>
           <button role="button" class="boton">
             <i class="fas fa-play"></i>Reproducir
@@ -64,29 +76,64 @@
         </div>
       </div>
 
-      
+      <section>
+        <div class="container">
+          <div id="" class="peliculas-recomendadas row mt-5">
+            <div class="contenedor-controles">
+              <h3>Recomendado para ti</h3>
+              <div class="indicadores"></div>
+            </div>
+            <div class="contenedor-principal">
+              <button role="button" id="" class="flecha-izquierda">◀</button>
 
-          <div class="carrusel">
-            <div class="carrusel-items">
-              <div class="carrusel-item">
-                <img src="./img/af.jpg" alt="" />
+              <div class="contenedor-carousel">
+                <div class="carousel">
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/accion.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/accion2.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/accion3.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/accion4.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/drama1.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/drama2.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/accion3.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/drama4.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/romance1.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/romance2.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/romance3.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/romance4.jpg" alt="" /></a>
+                  </div>
+                </div>
               </div>
-              <div class="carrusel-item">
-                <img src="./img/memory.jpg" alt="" />
-              </div>
-              <div class="carrusel-item">
-                <img src="./img/morbius.jpg" alt="" />
-              </div>
-              <div class="carrusel-item">
-                <img src="./img/per.jpg" alt="" />
-              </div>
-              <div class="carrusel-item">
-                <img src="./img/sonic.jpg" alt="" />
-              </div>
+
+              <button type="button" id="" class="flecha-derecha">▶</button>
             </div>
           </div>
         </div>
+      </section>
 
+<<<<<<< HEAD
 
 
     <!-- CATEGORIA 3 -->
@@ -131,4 +178,215 @@
   <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
   <script src="./js/index.js"></script>
 </body>
+=======
+      <section>
+        <div class="container">
+          <div id="" class="peliculas-recomendadas row mt-5">
+            <div class="contenedor-controles">
+              <h3>Series</h3>
+              <div class="indicadores"></div>
+            </div>
+            <div class="contenedor-principal">
+              <button role="button" id="" class="flecha-izquierda">◀</button>
+
+              <div class="contenedor-carousel">
+                <div class="carousel">
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/serie.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/serie2.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/serie3.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/serie4.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/serie6.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/serie5.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/serie7.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/serie8.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/serie9.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/serie10.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/serie11.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/serie12.jpg" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" id="" class="flecha-derecha">▶</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div id="" class="peliculas-recomendadas row mt-5">
+            <div class="contenedor-controles">
+              <h3>Anime</h3>
+              <div class="indicadores"></div>
+            </div>
+            <div class="contenedor-principal">
+              <button role="button" id="" class="flecha-izquierda">◀</button>
+
+              <div class="contenedor-carousel">
+                <div class="carousel">
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/anime1.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/anime2.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/anime3.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/anime4.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/anime5.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/anime6.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/anime7.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/anime8.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/anime9.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/anime10.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/anime11.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/anime12...jpg" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" id="" class="flecha-derecha">▶</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div id="" class="peliculas-recomendadas row mt-5">
+            <div class="contenedor-controles">
+              <h3>Próximamente</h3>
+              <div class="indicadores"></div>
+            </div>
+            <div class="contenedor-principal">
+              <button role="button" id="" class="flecha-izquierda">◀</button>
+
+              <div class="contenedor-carousel">
+                <div class="carousel">
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/pr.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/pr2.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/pr3.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/pr4.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/pr5.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/pr6.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/pr7.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/pr8.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/anime9.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/pr10.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/pr11.jpg" alt="" /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"><img src="./img/pr12.jpg" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" id="" class="flecha-derecha">▶</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-light">
+      <div class="container pt-3">
+        <div class="row px-3 text-center">
+          <div class="col"><span> Rolling Plus</span></div>
+          <div class="col"><span>Aviso Legal</span></div>
+          <div class="col"><span>Privacidad</span></div>
+        </div>
+        <div class="row px-3 mt-2">
+          <div class="col-4 col-md-12 text-center mb-4">
+            <span>Seguinos en:</span>
+          </div>
+          <div class="col text-center mb-2">
+            <span><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></span>
+          </div>
+          <div class="col text-center">
+            <span><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></span>
+          </div>
+          <div class="col text-center">
+            <span
+              ><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i
+            ></span>
+          </div>
+          <div class="col text-center">
+            <span
+              ><i class="fa fa-instagram fa-2x" aria-hidden="true"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/inicio.js"></script>
+  </body>
+>>>>>>> 69e8852b646f9b24b2c7b9d4ac682efaafb7c153
 </html>

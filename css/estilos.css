@@ -51,256 +51,39 @@ header nav a.activo {
   color: #fff;
 }
 
-/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
-.pelicula-principal {
-  font-size: 16px;
-  min-height: 40.62em;
-  color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
-    url(../img/poster1.jpg);
-  background-position: center center;
+/* ---- ----- ----- Pagina de CONTACTO ----- ----- ----- */
+
+#contactoMain {
+  margin-top: 18rem;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 10px;
+  left: 5px;
+  width: 80px;
+  z-index: 2;
+}
+
+.whatsapp img {
+  width: 80%;
+}
+
+#msjContacto {
+  background-color: rgba(14, 13, 13, 0.2);
+}
+#formContacto {
+  background-color: rgba(14, 13, 13, 0.2);
+}
+
+#contacto {
+  background-image: url(../img/pagcontacto.png);
   background-size: cover;
-  margin-bottom: 3.12em;
-  display: flex;
-  align-items: end;
 }
 
-.pelicula-principal .contenedor {
-  margin: 0 auto;
-  margin-bottom: 6.25em;
-}
-
-.pelicula-principal .titulo {
-  font-weight: 600;
-  font-size: 3.12em;
-  margin-bottom: 0.4em;
-}
-
-.pelicula-principal .descripcion {
-  font-weight: normal;
-  font-size: 1em;
-  line-height: 1.75em;
-  max-width: 50%;
-  margin-bottom: 1.25em;
-}
-
-.pelicula-principal .button {
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
-  border-radius: 0.31em;
-  padding: 0.93em 1.87em;
-  color: #fff;
-  margin-right: 1.25em;
-  margin-top: 0.5em;
-  cursor: pointer;
-  transition: 0.3s ease all;
-  font-size: 1.12em;
-}
-
-.pelicula-principal .boton:hover {
-  background: #fff;
-  color: #000;
-}
-
-.pelicula-principal .boton i {
-  margin-right: 1.25em;
-}
-
-@media screen and (max-width: 800px) {
-  header .logotipo {
-    margin-bottom: 10px;
-    font-size: 30px;
-  }
-
-  header .contenedor {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .pelicula-principal {
-    font-size: 14px;
-  }
-
-  .pelicula-principal .descripcion {
-    max-width: 100%;
-  }
-  .carrusel {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-
-  .carrusel-items {
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding: 30px 0px;
-  }
-
-  .carrusel-item {
-    min-width: 300px;
-    max-width: 300px;
-    height: 200px;
-    outline: 2px solid black;
-    cursor: pointer;
-  }
-
-  .carrusel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .carrusel-item:hover {
-    transform: scale(1.2);
-  }
-  .carrusel {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-
-  .carrusel-items {
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding: 30px 0px;
-  }
-
-  .carrusel-item {
-    min-width: 300px;
-    max-width: 300px;
-    height: 200px;
-    outline: 2px solid black;
-    cursor: pointer;
-  }
-
-  .carrusel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .carrusel-item:hover {
-    transform: scale(1.2);
-  }
-
-  /* ---- ----- ----- Pagina de CONTACTO ----- ----- ----- */
-
-  #contactoMain {
-    margin-top: 18rem;
-  }
-
-  .whatsapp {
-    position: fixed;
-    bottom: 10px;
-    left: 5px;
-    width: 80px;
-    z-index: 2;
-  }
-
-  .whatsapp img {
-    width: 80%;
-  }
-
-  #msjContacto {
-    background-color: rgba(14, 13, 13, 0.2);
-  }
-  #formContacto {
-    background-color: rgba(14, 13, 13, 0.2);
-  }
-
-  #contacto {
-    background-image: url(../img/pagcontacto.png);
-    background-size: cover;
-  }
-}
 .pelicula-principal .boton a {
   text-decoration: none;
   color: black;
-}
-
-.contenedor-titulo-controles {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
-.contenedor-titulo-controles h3 {
-  background: #fff;
-  font-size: 30px;
-}
-.contenedor-titulo-controles.indicadores button {
-  background: #fff;
-  height: 3px;
-  width: 10px;
-  cursor: pointer;
-  border: none;
-  margin-right: 2px;
-}
-.contenedor-titulo-controles.indicadores button:hover,
-.contenedor-titulo-controles.indicadores button.activo {
-  background: red;
-}
-.peliculas-recomendadas {
-  margin-bottom: 70px;
-}
-.peliculas-recomendadas.contenedorprincipal {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.peliculas-recomendadas.contenedorprincipal.flecha-izquierda,
-.peliculas-recomendadas.contenedorprincipal.flecha-derecha {
-  position: absolute;
-  border: none;
-  background: rgba(0, 0, 0, 0.3);
-  font-size: 40px;
-  height: 50%;
-  top: calc(50% - 25%);
-  line-height: 40px;
-  width: 50px;
-  color: #fff;
-  cursor: pointer;
-  z-index: 500;
-  transition: 0.2s ease all;
-}
-
-.peliculas-recomendadas.contenedorprincipal.flecha-izquierda {
-  left: 0;
-}
-.peliculas-recomendadas.contenedorprincipal.flecha-derecha {
-  right: 0;
-}
-
-.peliculas-recomendadas.contenedor-carousel {
-  width: 100%;
-  padding: 20px 0;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
-.peliculas-recomendadas.contenedor-carousel.carousel {
-  display: flex;
-  flex-wrap: nowrap;
-}
-.peliculas-recomendadas.contenedor-carousel.carousel.pelicula {
-  width: 20%;
-  transition: 0.3s ease all;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-.peliculas-recomendadas.contenedor-carousel.pelicula {
-  transform: scale(1.2);
-  transform-origin: center;
-}
-
-.peliculas-recomendadas.contenedor-carousel.carousel.pelicula img {
-  width: 100%;
-  vertical-align: top;
-}
-
-.peliculas-recomendadas.contenedorprincipal.flecha-izquierda:hover,
-.peliculas-recomendadas.contenedorprincipal.flecha-derecha:hover {
-  background: rgba(0, 0, 0, 0.9);
 }
 
 /* ---- ----- ----- Media Queries ----- ----- ----- */
@@ -321,20 +104,6 @@ header nav a.activo {
 
   .pelicula-principal .descripcion {
     max-width: 100%;
-  }
-
-  .peliculas-recomendadas.contenedor-carousel {
-    overflow: visible;
-  }
-  .peliculas-recomendadas.contenedor-carousel.carousel {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  .peliculas-recomendadas.indicadores,
-  .peliculas-recomendadas.peliculas-recomendadas.flecha-izquierda
-    .peliculas-recomendadas.flecha-derecha {
-    display: none;
   }
 
   .whatsapp {
