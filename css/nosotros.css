@@ -35,15 +35,13 @@ header .contenedor {
   align-items: center;
   position: fixed;
 }
-
 header .logotipo {
   font-family: "Bebas Neue", cursive;
   font-weight: normal;
-  color: #e50914;
+  color: var(--rojo);
   font-size: 40px;
   margin-left: 20px;
 }
-
 header nav a {
   color: #aaa;
   text-decoration: none;
