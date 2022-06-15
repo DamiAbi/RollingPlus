@@ -1,0 +1,63 @@
+body{
+    background-image: url(../img/pagcontacto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header .logotipo {
+    font-family: "Bebas Neue", cursive;
+    font-weight: normal;
+    color: #e50914;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #e50914;
+
+}
+
+a:hover {
+    color: #e50914;
+}
+
+/* .btn-agregar {
+    background-color: #e50914;
+    color: white;
+} */
+
+.btn-agregar:hover {
+    background-color: #e06f75;
+}
+
+.table {
+    background-color:  rgba(0, 0, 0, .7)
+}
+
+.textos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.denegado {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.denegado-aviso {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.btn-volver {
+    background-color: #e50914;
+    color: white;
+}
+
+.btn-volver:hover {
+    background-color: #e06f75;
+}
