@@ -1,3 +1,55 @@
+// Modificar navbar si el usuario está logueado
+let user = JSON.parse(localStorage.getItem('user')) || [];
+let navbar = document.getElementById('navbarNavDropdown');
+(() => {
+   if (user.logueado) {
+      navbar.innerHTML = `<ul class="navbar-nav w-100 d-flex justify-content-around" >
+      <li class="nav-item ">
+        <a class="nav-link text-white text-md-end" aria-current="page" href="#"> <i class=></i>Inicio</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-white text-md-end" aria-current="page" href="./pages/nosotros.html"><i ></i>Nosotros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white text-md-end" href="./pages/contacto.html"><i ></i> Contacto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white text-md-end" href="./pages/admin.html"><i ></i>Admin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white text-md-end" href="./index.html" onclick="cerrarSesion()"><i ></i>Cerrar Sesión</a>
+      </li>
+
+      
+    </ul>`;
+   } else {
+      navbar.innerHTML = `<ul class="navbar-nav w-100 d-flex justify-content-around" >
+      <li class="nav-item ">
+        <a class="nav-link text-white text-md-end" aria-current="page" href="#"> <i class=></i>Inicio</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-white text-md-end" aria-current="page" href="./pages/nosotros.html"><i ></i>Nosotros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white text-md-end" href="./pages/contacto.html"><i ></i> Contacto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white text-md-end" href="./pages/login.html"><i ></i>Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white text-md-end" href="./pages/registrarse.html"><i ></i>Registrarse</a>
+      </li>
+
+      
+    </ul>`;
+   }
+})();
+
+const cerrarSesion = () => {
+   user.logueado = false;
+   localStorage.setItem('user', JSON.stringify(user));
+}
+
 let fila = document.querySelector(`.contenedor-carousel`)
 let peliculas = document.querySelector(`.pelicula`)
 
