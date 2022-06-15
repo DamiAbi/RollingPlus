@@ -1,3 +1,20 @@
+let user = JSON.parse(localStorage.getItem('user')) || [];
+let container = document.querySelector('.container');
+
+
+
+(() => {
+    if (user.rol != 'admin') {
+        container.innerHTML = `<div class="denegado"><h4 class="denegado-aviso text-center text-white">No posee 
+        los permisos para acceder a esta sección. </h4> <a class="btn btn-volver" href="../index.html">Regresar</a></div>`
+    } else {
+        let saludo = document.querySelector('.saludo');
+        saludo.innerHTML = user.nombre;
+    }
+    
+})();
+
+
 class Pelicula {
     constructor(id, titulo, descripcion, imagen) {
         this.id = id;
@@ -26,7 +43,7 @@ const setTabla = () => {
         <td>${pelicula.titulo}</td>
         <td>${pelicula.descripcion}</td>
         <td>${pelicula.imagen}</td>
-        <td><button id="edit" class="btn btn-warning btn-sm" onclick="mostrarModal(${pelicula.id})"><i class="fa fa-pencil-square-o" aria-hidden="true">Edit</i></button></td>
+        <td><button id="edit" class="btn btn-outline-light btn-sm" onclick="mostrarModal(${pelicula.id})"><i class="fa fa-pencil-square-o" aria-hidden="true">Edit</i></button></td>
         <td><button id="delete" class="btn btn-danger btn-sm" onclick="eliminarPelicula(${index})"><i class="fa fa-trash-o" aria-hidden="true">X</i></button></td>`;
 
         fila.innerHTML = celda;
