@@ -36,28 +36,45 @@ const registroUsuario = function (e) {
     
         if (validar) 
         {
-            return alert("El correo ya está registrado.");
+
+            setTimeout(function(){
+
+                let msj = document.createElement("div")
+                // msj.classList= "col-12 col-md-12 col-lg-12"
+                
+                let cuerpo = `  <div class="alert alert-danger mt-5" role="alert">
+                                    El correo ${correo} ya se encuentra en uso!
+                                </div>`
+                
+                msj.innerHTML = cuerpo
+                document.getElementById("registro").appendChild(msj)
+            }, 100)
+
+            // return alert("El correo ya está registrado.");
+        }else{
+
+            usuarios.push(new Usuario(nombre, correo, password));
+    
+            localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    
+            document.getElementById("formularioRegistro").reset();
+    
+    
+            let msj = document.createElement("div")
+            // msj.classList= "col-12 col-md-12 col-lg-12"
+            
+            let cuerpo = `  <div class="alert alert-success mt-5" role="alert">
+                                El correo ${correo} se ha registrado correctamente!
+                            </div>`
+            
+            msj.innerHTML = cuerpo
+            document.getElementById("registro").appendChild(msj)
+    
+            setTimeout(function(){
+                location.replace("../pages/login.html");
+            }, 3000)
         }
         
-        usuarios.push(new Usuario(nombre, correo, password));
-
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
-
-        document.getElementById("formularioRegistro").reset();
-
-        let msj = document.createElement("div")
-        // msj.classList= "col-12 col-md-12 col-lg-12"
-        
-        let cuerpo = `  <div class="alert alert-success mt-5" role="alert">
-                            El usuario ${correo} se ha registrado correctamente!
-                        </div>`
-        
-        msj.innerHTML = cuerpo
-        document.getElementById("registro").appendChild(msj)
-
-        setTimeout(function(){
-            location.replace("../pages/login.html");
-        }, 3000)
         
     }
     else
