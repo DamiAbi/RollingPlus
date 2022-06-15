@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../img/loguito.png" type="image/x-icon">
     
+    <script src="../js/smtp.js"></script>
     <title>Rolling Plus | Contacto</title>
 </head>
 <body id="contacto">
@@ -56,18 +57,22 @@
   
     <main>
         <div id = "contactoMain" class="container">
-            <div class="row d-flex justify-content-between">
+            <div id="cosas" class="row d-flex justify-content-between">
 
-                <div id="msjContacto" class="col-sm-12 col-md-5 text-white text-center">
-                    <h3>¡Trabajemos juntos!</h3>
+                <div id="msjContacto" class="col-sm-12 col-md-5 text-white text-center mb-4">
+                    <h3>Encontranos en</h3>
                     <hr>
                     <h4>
                         Si deseas consultar mayor informacion sobre nuestros servicios o tienes algunda duda al respecto, no dudes en comunicarte con nosotros y te contactaremos a la brevedad
                     </h4>
-                    <br><br><br>
+                    <div>
+                        <h4> <i>Argentina</i></h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105065.25199216799!2d-58.44157143484061!3d-34.622133228705344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7c2fbbffe73fab4!2sFundaci%C3%B3n%20Centro%20Astrol%C3%B3gico%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1631737473185!5m2!1ses!2sar" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <hr>
+                    </div>
                 </div>
                 
-                <div id="formContacto" class="col-sm-12 col-md-5 text-white">
+                <div id="formContacto" class="col-sm-12 col-md-5 text-white mb-3">
                     <h3 class="text-center">Comunicate con nosotros</h3>
                     <hr>
                     <form id="formulario" class="d-grid gap-2 mb-3 text-white">
@@ -80,13 +85,13 @@
                         
                         <textarea name="msj" id="msjForm" placeholder="Escriba su msj aqui..." cols="15" rows="3" name="mensaje" class=" bg-dark text-white"></textarea>
                         
-                        <button id="btnContacto" class="btn btn-success rounded-pill">Enviar</button>
-                        
+                        <button id="btnContacto" class="btn btn-success rounded-pill">Enviar</button>                       
                     </form>
-                </div>
-                
+
+                </div>                
             </div>
         </div>
+
         
         <div class="whatsapp">
             <a href="https://wa.me/5493815095541" target="_blank">

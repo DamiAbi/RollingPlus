@@ -34,6 +34,7 @@ header .contenedor {
   align-items: center;
   position: fixed;
 }
+
 header .logotipo {
   font-family: "Bebas Neue", cursive;
   font-weight: normal;
@@ -41,6 +42,7 @@ header .logotipo {
   font-size: 40px;
   margin-left: 20px;
 }
+
 header nav a {
   color: rgb(20, 12, 12);
   text-decoration: none;
@@ -51,6 +53,7 @@ header nav a:hover,
 header nav a.activo {
   color: #fff;
 }
+
 
 .cursiva {
   font-size: 40px;
