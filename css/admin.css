@@ -1,0 +1,13 @@
+header .logotipo {
+    font-family: "Bebas Neue", cursive;
+    font-weight: normal;
+    color: purple;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: purple;
+
+}

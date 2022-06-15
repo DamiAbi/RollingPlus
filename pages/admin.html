@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&splay=swap"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="shortcut icon" href="../img/loguito.png" type="image/x-icon">
+    
+    <title>Rolling Plus | Admin</title>
+</head>
+<body>
+    <header>
+        <nav>    
+            <h2 class="logotipo ms-3 mt-0"> <a href="../index.html">ROLLING PLUS</a></h2>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row m-4">
+            <div class="col-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="scope">#</th>
+                            <th class="scope">Título</th>
+                            <th class="scope">Descripcion</th>
+                            <th class="scope">Imagen</th>
+                            <th class="scope">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="body_tabla">
+
+                    </tbody>
+                </table>
+                <button class="btn btn-success" onclick="mostrarModal(null)">Agregar Película</button>
+                <!-- <form id="formulario" class="d-grid gap-2 text-white ">
+                    <label class="fw-bold">Correo electrónico</label>
+                    <input type="email" class="form-control bg-dark text-white" id="email" maxlength="30" required/>
+
+                    <label class="fw-bold mt-4">Contraseña</label>
+                    <input type="password" class="form-control bg-dark text-white" id="password" maxlength="8" required/>
+                    <p>
+                        PUTA
+                        <b>
+                            <a href="/pages/recuperarPass.html" class=" text-white nuevaPassword">AQUI.</a>
+                        </b>
+                    </p>
+
+                    <button class="btn btn-success mt-1 rounded-pill">Ingresar</button>
+                </form> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTitulo"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/admin.js"></script>
+    
+</body>
+</html>
