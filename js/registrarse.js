@@ -4,11 +4,12 @@ let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 let exitoRegistro = document.getElementById("registro") 
 
 class Usuario {
-    constructor(nombre, email, password, rol = "usuario") {
+    constructor(nombre, email, password, rol = "usuario", logueado = false) {
         this.nombre = nombre;
         this.email = email;
         this.password = password;
         this.rol = rol;
+        this.logueado = logueado;
     }
 }
 

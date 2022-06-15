@@ -1,4 +1,5 @@
 let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+let user = JSON.parse(localStorage.getItem('user')) || [];
 
 function handleSubmit(e) {
 
@@ -17,7 +18,10 @@ function handleSubmit(e) {
     {
         if (validar.password === password) 
         {
+            validar.logueado = true;
+            
             localStorage.setItem("user", JSON.stringify(validar));
+            
             
             if (validar.rol === "admin") 
             {
