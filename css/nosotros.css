@@ -9,12 +9,11 @@
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background: black;
+  background: white;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -43,7 +42,7 @@ header .logotipo {
   margin-left: 20px;
 }
 header nav a {
-  color: #aaa;
+  color: rgb(20, 12, 12);
   text-decoration: none;
   margin-right: 20px;
 }
@@ -81,7 +80,7 @@ header nav a.activo {
   height: 300px;
   border-radius: 10%;
   margin-top: 32px;
-  background-color: rgb(48, 11, 11);
+  background-color: rgb(245, 6, 6);
 }
 
 .card img {

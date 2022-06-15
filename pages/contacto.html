@@ -16,19 +16,44 @@
 <body id="contacto">
 
     <header>
-        <div class="contenedor">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <div class="container-fluid">
+            
             <h2 class="logotipo">Rolling plus</h2>
-            <nav>
-                <a href="../index.html" class="activo">Inicio</a>
-                <a href="#">Nosotros</a>
-                <a href="/pages/contacto.html">Contacto</a>
-
-                <a href="/pages/login.html">Login</a>
-                <a href="/pages/registrarse.html">Registrarse</a>
-            </nav>
-        </div>
-    </header>
-
+             <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fix" id="navbarNavDropdown">
+              <ul class="navbar-nav w-100 d-flex justify-content-around" >
+                <li class="nav-item ">
+                  <a class="nav-link text-white text-md-end" aria-current="page" href="../index.html"> <i class=></i>Inicio</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link text-white text-md-end" aria-current="page" href="../nosotros.html"><i ></i>Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white text-md-end" href="./pages/contacto.html"><i ></i> Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white text-md-end" href="./pages/login.html"><i ></i>Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white text-md-end" href="../pages/registrarse.html"><i ></i>Registrarse</a>
+                </li>
+  
+                
+              </ul>
+            </div>                         
+          </nav>
+        </header>
+  
     <main>
         <div id = "contactoMain" class="container">
             <div class="row d-flex justify-content-between">
@@ -69,8 +94,44 @@
             </a>
         </div>
     </main>
-
+    <footer class="bg-dark text-light">
+        <div class="container pt-3">
+          <div class="row px-3 text-center">
+            <div class="col"><span> Todos los derechos reservados</span></div>
+            <div class="col"><span> Rolling Plus</span></div>
+            <div class="col"><span>Aviso Legal</span></div>
+            <div class="col"><span>Privacidad</span></div>
+          </div>
+          <div class="row px-3 mt-2">
+            <div class="col-4 col-md-12 text-center mb-4">
+              <span>Seguinos en:</span>
+            </div>
+            <div class="col text-center mb-2">
+              <span><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></span>
+            </div>
+            <div class="col text-center">
+              <span><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></span>
+            </div>
+            <div class="col text-center">
+              <span
+                ><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i
+              ></span>
+            </div>
+            <div class="col text-center">
+              <span
+                ><i class="fa fa-instagram fa-2x" aria-hidden="true"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/contacto.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>
