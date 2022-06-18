@@ -9,7 +9,7 @@ El sitio deberá estar compuesto con una página principal con el catálogo de p
 desde donde se administra toda la información de las películas y/o series disponibles.
 
 Integrantes:
-Damaris Palacios
-Joaquin Cardalda
-Santiago Comolli
+Damaris Palacios - 
+Joaquin Cardalda - 
+Santiago Comolli - 
 Tomas Figueroa Ruesjas
