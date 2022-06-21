@@ -1,7 +1,7 @@
 let user = JSON.parse(localStorage.getItem('user')) || [];
 let container = document.querySelector('.container');
 
-
+// Chequear si el usuario es admin
 
 (() => {
     if (user.rol != 'admin') {
@@ -40,9 +40,9 @@ const setTabla = () => {
     peliculas.map((pelicula, index) => {
         let fila = document.createElement('tr');
         let celda = `<th scope="row">${index + 1}</th>
-        <td>${pelicula.titulo}</td>
-        <td>${pelicula.descripcion}</td>
-        <td>${pelicula.imagen}</td>
+        <td>${pelicula.titulo.length > 30 ? pelicula.titulo.substring(0,30) + '...' : pelicula.titulo}</td>
+        <td>${pelicula.descripcion.length > 30 ? pelicula.descripcion.substring(0,30) + '...' : pelicula.descripcion}</td>
+        <td>${pelicula.imagen.length > 30 ? pelicula.imagen.substring(0,30) + '...' : pelicula.imagen}</td>
         <td><button id="edit" class="btn btn-outline-light btn-sm" onclick="mostrarModal(${pelicula.id})"><i class="fa fa-pencil-square-o" aria-hidden="true">Edit</i></button></td>
         <td><button id="delete" class="btn btn-danger btn-sm" onclick="eliminarPelicula(${index})"><i class="fa fa-trash-o" aria-hidden="true">X</i></button></td>`;
 
