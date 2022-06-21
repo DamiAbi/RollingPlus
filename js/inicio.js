@@ -1,6 +1,44 @@
+let peliculasCol = JSON.parse(localStorage.getItem('peliculas')) || [];
+
+(() => {
+   let carruselRecomendados = document.querySelector('.carousel');
+   let carruselSeries = document.querySelector('.carousel-2');
+   let carruselAnime = document.querySelector('.carousel-3');
+   let carruselProx = document.querySelector('.carousel-4');
+
+   peliculasCol.map((pelicula) => {
+
+    switch(pelicula.categoria) {
+      case 'recomendados':
+        return carruselRecomendados.innerHTML += `<div class="pelicula">
+        <a href="../pages/pelicula.html" onclick="setPelicula(${pelicula.id})"><img src="${pelicula.imagen}" alt="" /></a>
+      </div>`;
+      case 'series':
+        return carruselSeries.innerHTML += `<div class="pelicula">
+        <a href="../pages/pelicula.html" onclick="setPelicula(${pelicula.id})"><img src="${pelicula.imagen}" alt="" /></a>
+      </div>`;
+      case 'anime':
+        return carruselAnime.innerHTML += `<div class="pelicula">
+        <a href="../pages/pelicula.html" onclick="setPelicula(${pelicula.id})"><img src="${pelicula.imagen}" alt="" /></a>
+      </div>`;
+      case 'proximamente':
+        return carruselProx.innerHTML += `<div class="pelicula">
+        <a href="../pages/pelicula.html" onclick="setPelicula(${pelicula.id})"><img src="${pelicula.imagen}" alt="" /></a>
+      </div>`;
+    }
+   })
+
+})();
+
+function setPelicula(id) {
+   let pelicula = peliculasCol.find((pelicula) => pelicula.id == id);
+   localStorage.setItem('pelicula', JSON.stringify(pelicula));
+}
+
 // Modificar navbar si el usuario está logueado
 let user = JSON.parse(localStorage.getItem('user')) || [];
 let navbar = document.getElementById('navbarNavDropdown');
+
 (() => {
    if (user.logueado) {
       navbar.innerHTML = `<ul class="navbar-nav w-100 d-flex justify-content-around" >
