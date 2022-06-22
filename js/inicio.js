@@ -1,34 +1,34 @@
 let peliculasCol = JSON.parse(localStorage.getItem('peliculas')) || [];
 
-(() => {
-   let carruselRecomendados = document.querySelector('.carousel');
-   let carruselSeries = document.querySelector('.carousel-2');
-   let carruselAnime = document.querySelector('.carousel-3');
-   let carruselProx = document.querySelector('.carousel-4');
+// (() => {
+//    let carruselRecomendados = document.querySelector('.recomendadas');
+//    let carruselSeries = document.querySelector('.series');
+//    let carruselAnime = document.querySelector('.anime');
+//    let carruselProx = document.querySelector('.proximamente');
 
-   peliculasCol.map((pelicula) => {
+//    peliculasCol.map((pelicula) => {
 
-    switch(pelicula.categoria) {
-      case 'recomendados':
-        return carruselRecomendados.innerHTML += `<div class="pelicula">
-        <a href="../pages/pelicula.html" onclick="setPelicula(${pelicula.id})"><img src="${pelicula.imagen}" alt="" /></a>
-      </div>`;
-      case 'series':
-        return carruselSeries.innerHTML += `<div class="pelicula">
-        <a href="../pages/pelicula.html" onclick="setPelicula(${pelicula.id})"><img src="${pelicula.imagen}" alt="" /></a>
-      </div>`;
-      case 'anime':
-        return carruselAnime.innerHTML += `<div class="pelicula">
-        <a href="../pages/pelicula.html" onclick="setPelicula(${pelicula.id})"><img src="${pelicula.imagen}" alt="" /></a>
-      </div>`;
-      case 'proximamente':
-        return carruselProx.innerHTML += `<div class="pelicula">
-        <a href="../pages/pelicula.html" onclick="setPelicula(${pelicula.id})"><img src="${pelicula.imagen}" alt="" /></a>
-      </div>`;
-    }
-   })
+//     switch(pelicula.categoria) {
+//       case 'recomendados':
+//         return carruselRecomendados.innerHTML += `<div class="pelicula">
+//         <a href="../pages/pelicula.html" onclick="setPelicula(${pelicula.id})"><img src="${pelicula.imagen}" alt="" /></a>
+//       </div>`;
+//       case 'series':
+//         return carruselSeries.innerHTML += `<div class="pelicula">
+//         <a href="../pages/pelicula.html" onclick="setPelicula(${pelicula.id})"><img src="${pelicula.imagen}" alt="" /></a>
+//       </div>`;
+//       case 'anime':
+//         return carruselAnime.innerHTML += `<div class="pelicula">
+//         <a href="../pages/pelicula.html" onclick="setPelicula(${pelicula.id})"><img src="${pelicula.imagen}" alt="" /></a>
+//       </div>`;
+//       case 'proximamente':
+//         return carruselProx.innerHTML += `<div class="pelicula">
+//         <a href="../pages/pelicula.html" onclick="setPelicula(${pelicula.id})"><img src="${pelicula.imagen}" alt="" /></a>
+//       </div>`;
+//     }
+//    })
 
-})();
+// })();
 
 function setPelicula(id) {
    let pelicula = peliculasCol.find((pelicula) => pelicula.id == id);
@@ -88,73 +88,91 @@ const cerrarSesion = () => {
    localStorage.setItem('user', JSON.stringify(user));
 }
 
-let fila = document.querySelector(`.contenedor-carousel`)
+let filas = document.querySelectorAll(`.contenedor-carousel`)
 let peliculas = document.querySelector(`.pelicula`)
 
-let flechaIzquierda = document.querySelector(`.flecha-izquierda`)
-let flechaDerecha = document.querySelector(`.flecha-derecha`)
+let flechaIzquierda = document.querySelectorAll(`.flecha-izquierda`)
+let flechaDerecha = document.querySelectorAll(`.flecha-derecha`)
+console.log(flechaDerecha);
 
 //Event listener para flecha derecha // 
-flechaDerecha.addEventListener(`click`,() => {
-   fila.scrollLeft += fila.offsetWidth;
-  console.log(`hola`)
+flechaDerecha.forEach((flecha) => {
+  flecha.addEventListener(`click`,() => {
+    filas.forEach((fila) => {
+      let id = fila.id;
+      flecha.classList.contains(`${id}`) && handleFlechaDerecha(fila)
+    })
+ })
 })
+
+function handleFlechaDerecha(fila) {
+  fila.scrollLeft += fila.offsetWidth;
+}
 
 //Event listener para flecha Izquierda // 
-flechaIzquierda.addEventListener(`click`,() => {
-   fila.scrollLeft -= fila.offsetWidth;
-   
-}) 
-
-
-let fila2 = document.querySelector(`.contenedor-carousel-2`)
-let peliculas2 = document.querySelector(`.pelicula-2`)
-
-let flechaIzquierda2 = document.querySelector(`.flecha-izquierda-2`)
-let flechaDerecha2 = document.querySelector(`.flecha-derecha-2`)
-
-flechaDerecha2.addEventListener(`click`,() => {
-   fila2.scrollLeft += fila2.offsetWidth;
-  console.log(`hola`)
+flechaIzquierda.forEach((flecha) => {
+  flecha.addEventListener(`click`,() => {
+    filas.forEach((fila) => {
+      let id = fila.id;
+      flecha.classList.contains(`${id}`) && handleFlechaIzquierda(fila)
+    })
+ })
 })
--2
 
-flechaIzquierda2.addEventListener(`click`,() => {
-   fila2.scrollLeft -= fila2.offsetWidth;
+function handleFlechaIzquierda(fila) {
+  fila.scrollLeft -= fila.offsetWidth;
+}
+
+
+
+// let fila2 = document.querySelector(`.contenedor-carousel-2`)
+// let peliculas2 = document.querySelector(`.pelicula-2`)
+
+// let flechaIzquierda2 = document.querySelector(`.flecha-izquierda-2`)
+// let flechaDerecha2 = document.querySelector(`.flecha-derecha-2`)
+
+// flechaDerecha2.addEventListener(`click`,() => {
+//    fila2.scrollLeft += fila2.offsetWidth;
+//   console.log(`hola`)
+// })
+// -2
+
+// flechaIzquierda2.addEventListener(`click`,() => {
+//    fila2.scrollLeft -= fila2.offsetWidth;
    
-}) 
-let fila3 = document.querySelector(`.contenedor-carousel-3`)
-let peliculas3 = document.querySelector(`.pelicula-3`)
+// }) 
+// let fila3 = document.querySelector(`.contenedor-carousel-3`)
+// let peliculas3 = document.querySelector(`.pelicula-3`)
 
-let flechaIzquierda3 = document.querySelector(`.flecha-izquierda-3`)
-let flechaDerecha3 = document.querySelector(`.flecha-derecha-3`)
-/ 
-flechaDerecha3.addEventListener(`click`,() => {
-   fila3.scrollLeft += fila3.offsetWidth;
-  console.log(`hola`)
-})
--2
+// let flechaIzquierda3 = document.querySelector(`.flecha-izquierda-3`)
+// let flechaDerecha3 = document.querySelector(`.flecha-derecha-3`)
+// / 
+// flechaDerecha3.addEventListener(`click`,() => {
+//    fila3.scrollLeft += fila3.offsetWidth;
+//   console.log(`hola`)
+// })
+// -2
  
-flechaIzquierda3.addEventListener(`click`,() => {
-   fila3.scrollLeft -= fila3.offsetWidth;
+// flechaIzquierda3.addEventListener(`click`,() => {
+//    fila3.scrollLeft -= fila3.offsetWidth;
    
-}) 
+// }) 
 
-let fila4 = document.querySelector(`.contenedor-carousel-4`)
-let peliculas4 = document.querySelector(`.pelicula-4`)
+// let fila4 = document.querySelector(`.contenedor-carousel-4`)
+// let peliculas4 = document.querySelector(`.pelicula-4`)
 
-let flechaIzquierda4 = document.querySelector(`.flecha-izquierda-4`)
-let flechaDerecha4 = document.querySelector(`.flecha-derecha-4`)
+// let flechaIzquierda4 = document.querySelector(`.flecha-izquierda-4`)
+// let flechaDerecha4 = document.querySelector(`.flecha-derecha-4`)
  
-flechaDerecha4.addEventListener(`click`,() => {
-   fila4.scrollLeft += fila4.offsetWidth;
-  console.log(`hola`)
-})
--2
-flechaIzquierda4.addEventListener(`click`,() => {
-   fila4.scrollLeft -= fila4.offsetWidth;
+// flechaDerecha4.addEventListener(`click`,() => {
+//    fila4.scrollLeft += fila4.offsetWidth;
+//   console.log(`hola`)
+// })
+// -2
+// flechaIzquierda4.addEventListener(`click`,() => {
+//    fila4.scrollLeft -= fila4.offsetWidth;
    
-}) 
+// }) 
 
 
 function cargarTarjetas() {

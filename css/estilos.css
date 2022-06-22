@@ -1,3 +1,8 @@
+:root {
+  --rojo: #e50914;
+  --fondo: #141414;
+}
+
 #msjContacto {
   background-color: rgba(14, 13, 13, 0.5);
 }
@@ -29,4 +34,23 @@
 #formContacto {
   background-color: rgba(184, 181, 181, 0.2);
   border-radius: 5%;
+}
+
+header .logotipo {
+  font-family: "Bebas Neue", cursive;
+  font-weight: normal;
+  color: var(--rojo);
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+header nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+  color: #fff;
 }

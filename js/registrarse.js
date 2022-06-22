@@ -69,7 +69,7 @@ const registroUsuario = function (e) {
                             </div>`
             
             msj.innerHTML = cuerpo
-            document.getElementById("registro").appendChild(msj)
+            document.getElementById("formularioRegistro").appendChild(msj)
     
             setTimeout(function(){
                 location.replace("../pages/login.html");

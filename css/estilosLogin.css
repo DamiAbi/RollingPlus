@@ -12,6 +12,10 @@ a {
   color: red;
 }
 
+a:hover {
+  color: red;
+}
+
 .nuevaPassword {
   font-size: 13px;
 }

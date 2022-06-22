@@ -1,10 +1,5 @@
-
-
-const redireccionar=function(){
-    
+(() => {
     setTimeout(function(){
-        location.href="../index.html"
+        location.replace("../index.html");
     }, 4000)
-}
-
-redireccionar()
+})();
