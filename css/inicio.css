@@ -23,6 +23,7 @@ header {
   padding: 30px 0;
   position: fixed;
   top: 0;
+  z-index: 100;
 }
 
 header .contenedor {
@@ -126,6 +127,9 @@ header nav a.activo {
   }
 }
 
+h3 {
+  color: white;
+}
 .peliculas-recomendadas {
   margin-bottom: 70px;
 }

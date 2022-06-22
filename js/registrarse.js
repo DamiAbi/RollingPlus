@@ -22,7 +22,6 @@ const registroUsuario = function (e) {
     let password = document.getElementById("password").value;
     let password2 = document.getElementById("password2").value;
 
-
     if (isNaN(nombre))
     {
         //comparar contraseñas
@@ -34,6 +33,7 @@ const registroUsuario = function (e) {
         let validar = usuarios.find((user) => {
             return user.email === correo;
         });
+
     
         if (validar) 
         {
