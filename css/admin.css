@@ -61,3 +61,8 @@ a:hover {
 .btn-volver:hover {
     background-color: #e06f75;
 }
+
+#botonAtras::after {
+    background-image: url('../img/flecha-volver.svg');
+    background-position: center;
+}
