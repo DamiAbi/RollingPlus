@@ -1,2 +1,32 @@
+#msjContacto {
+  background-color: rgba(14, 13, 13, 0.5);
+}
+#formContacto {
+  background-color: rgba(14, 13, 13, 0.5);
+}
 
- 
+#contacto {
+  background-image: url(../img/pagcontacto.png);
+  background-size: cover;
+}
+#contactoMain {
+  margin-top: 18rem;
+}
+.whatsapp {
+  position: fixed;
+  bottom: 10px;
+  left: 5px;
+  width: 80px;
+  z-index: 2;
+}
+.whatsapp img {
+  width: 80%;
+}
+#msjContacto {
+  background-color: rgba(184, 181, 181, 0.2);
+  border-radius: 5%;
+}
+#formContacto {
+  background-color: rgba(184, 181, 181, 0.2);
+  border-radius: 5%;
+}

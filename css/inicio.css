@@ -127,6 +127,9 @@ header nav a.activo {
   }
 }
 
+h3 {
+  color: white;
+}
 .peliculas-recomendadas {
   margin-bottom: 70px;
 }
